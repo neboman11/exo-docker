@@ -1,6 +1,6 @@
-FROM docker.io/tensorflow/tensorflow:2.18.0
+FROM docker.io/library/python:3.12
 
-RUN apt update && apt install -y --no-install-recommends git libgl1 clang python3-clang python3-llvmlite
+RUN apt update && apt install -y --no-install-recommends git libgl1 clang
 
 WORKDIR /App
 
