@@ -11,7 +11,7 @@ RUN mkdir -pv /App/exo/data
 FROM docker.io/tailscale/tailscale:latest
 COPY --from=build /App /App
 
-WORKDIR /App
+WORKDIR /App/exo
 
 RUN apk update && apk add python3 mesa-gl clang bash
 
