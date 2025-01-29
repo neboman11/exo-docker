@@ -13,7 +13,7 @@ COPY --from=build /App /App
 
 WORKDIR /App
 
-RUN apk update && apk add python3 mesa-gl clang
+RUN apk update && apk add python3 mesa-gl clang bash
 
 ENV EXO_HOME=/App/exo/data
 
